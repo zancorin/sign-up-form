@@ -1,0 +1,40 @@
+* {
+    margin:0;
+    padding:0;
+    outline: 1px solid red;
+    outline-offset: -1px;
+}
+
+.mainContainer {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.leftSideContainer {
+    background-color:darkorchid;
+    flex: 1 1 33vw;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: url(./Images/galaxy.jpg);
+    background-size:cover;
+    
+}
+
+.leftSideContainer > .leftSideTopContent {
+    padding-top: 25vh;
+}
+.leftSideContainer > .leftSideBotContent {
+    padding-bottom: 2vh;
+}
+
+.rightSideContainer {
+    background-color: gray;
+    flex: 3 1 67vw;
+}

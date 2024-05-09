@@ -11,8 +11,7 @@
 * {
     margin:0;
     padding:0;
-    outline: 1px solid red;
-    outline-offset: -1px;
+
 }
 
 html {
@@ -21,6 +20,7 @@ html {
 
 h1 {
     font-family: 'stardosstencil', serif;
+    color: whitesmoke;
 }
 
 .mainContainer {
@@ -38,7 +38,7 @@ h1 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 
     background-image: url(./Images/galaxy.jpg);
     background-size:cover;
@@ -46,13 +46,16 @@ h1 {
 }
 
 .leftSideContainer > .leftSideTopContent {
+    background-color:rgba(53, 33, 52, 0.767);
     margin-top: 25vh;
+    gap:25px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
     align-items:center;
 }
 .leftSideContainer > .leftSideBotContent {
+    background-color:rgba(53, 33, 52, 0.767);
     padding-bottom: 1vh;
 }
 
@@ -68,4 +71,14 @@ h1 {
 h4 {
     text-align: center;
     padding-top: 2px;
+    font-family: 'stardosstencil', serif;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: whitesmoke;
 }

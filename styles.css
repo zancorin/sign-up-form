@@ -1,8 +1,26 @@
+@font-face {
+    font-family: 'stardosstencil';
+    src: url('./fonts/stardosstencil-bold-webfont.woff2') format('woff2'),
+         url('./fonts/stardosstencil-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
 * {
     margin:0;
     padding:0;
     outline: 1px solid red;
     outline-offset: -1px;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: 'stardosstencil', serif;
 }
 
 .mainContainer {
@@ -28,13 +46,26 @@
 }
 
 .leftSideContainer > .leftSideTopContent {
-    padding-top: 25vh;
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    align-items:center;
 }
 .leftSideContainer > .leftSideBotContent {
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
 }
 
 .rightSideContainer {
     background-color: gray;
-    flex: 3 1 67vw;
+    flex: 1 1 67vw;
+}
+
+/*
+#B22323
+*/
+
+h4 {
+    text-align: center;
+    padding-top: 2px;
 }

@@ -55,7 +55,7 @@ h1 {
     align-items:center;
 }
 .leftSideContainer > .leftSideBotContent {
-    background-color:rgba(53, 33, 52, 0.767);
+    background-color:rgba(53, 33, 52, 0.24);
     padding-bottom: 1vh;
 }
 

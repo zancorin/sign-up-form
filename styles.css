@@ -103,6 +103,7 @@ h2:nth-child(2) {
 .form-pair {
     display:flex;
     flex-direction: column;
+    gap:1px;
 }
 /*
 #B22323
@@ -127,7 +128,10 @@ a:visited {
     color: whitesmoke;
 }
 
-
+label {
+    font-size: small;
+    text-transform: uppercase;
+}
 
 /*RIGHT SIDE*/
 
@@ -140,13 +144,20 @@ input:invalid {
   border-color: rgb(236, 81, 81);
 }
 
-.form-row {
-    padding-left: 50px;
-}
-
-.form-column: display:flex;
 
 label {
     position: absoulte;
     
+}
+
+.form-column input[type='text'],
+.form-column input[type='email'],
+.form-column input[type='tel'],
+.form-column input[type='password'] {
+    background-color: #FFFFFF;
+    border: 1px solid #D6D9DC;
+    border-radius: 3px;
+    width: 100%;
+    padding: 7px;
+    font-size: 14px;
 }

@@ -34,26 +34,57 @@
                 <h2>Are you ready for the most amazing game you'll never play? This non-existant game includes <em>everything</em> you've ever dreamed and imagined. Sign-up below to try it out.</h2>
                 <h2>Too bad it's not real.</h2>
             </div>
-            <div class="rightSideForm">
+
                 <form action="" method="get" class="sign-up-form">
                     <header class="sign-up-form-header">
                         <h2>Let's goo!</h2>
                     </header>
 
-                    <div class="form-row">
-                        <label for="name">First Name</label>
-                        <input type="text" id="name" name="name" placeholder="George"/>
+                    <div class="rightSideForm">
+                    <div class="form-column">
 
-                        <label for="username">Username</label>
-                        <input type="text" id="username" name="username" placeholder="Zancorin"/>
+                        <div class="form-pair">
+                        <label for="name">First Name</label>
+                        <input type="text" 
+                        id="name" name="name" placeholder="George"
+                        minlength="3" maxlength="20"/>
+                        </div>
+
+                        <div class="form-pair">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="youremail@website.com">
+                        </div>
+
+
+                        <div class="form-pair">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password"
+                                minlength="8" maxlength="20">
+                        </div>
                     </div>
 
-                    <div class="form-row">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="youremail@website.com">
+                    <div class="form-column">
 
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="555-5555">
+                        <div class="form-pair">
+                            <label for="username">Username</label>
+                            <input type="text"
+                            id="username" name="username" placeholder="Zancorin"
+                            minlength="3" maxlength="20"/>
+                        </div>
+
+
+                        <div class="form-pair">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel"
+                            id="phone" name="phone" placeholder="555-555-5555"
+                            minlength="10" maxlength="10"/>
+                        </div>
+
+                        <div class="form-pair">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="confirmPassword"
+                            minlength="8" maxlength="20">
+                        </div>
                     </div>
 
                    <!-- <fieldset class="legacy-form-row">
@@ -67,12 +98,9 @@
                     </fieldset>
                     --->
 
-                    <div class="form-row">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
 
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword">
+
+
                     </div>
 
                 </form>

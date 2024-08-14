@@ -90,6 +90,7 @@ h2:nth-child(2) {
     display:flex;
     flex-direction: row;
     gap:50px;
+    box-shadow: 0 2px 5px 1px #00000070;
     
 }
 
@@ -137,6 +138,7 @@ label {
 
 input {
     border-radius: 3px;
+
 }
 
 input:invalid {
@@ -149,11 +151,14 @@ label {
     position: absoulte;
     
 }
-
+textarea:focus, input:focus{
+    outline: none;
+}
 .form-column input[type='text'],
 .form-column input[type='email'],
 .form-column input[type='tel'],
 .form-column input[type='password'] {
+
     background-color: #FFFFFF;
     border: 1px solid #D6D9DC;
     border-radius: 3px;
@@ -161,3 +166,16 @@ label {
     padding: 7px;
     font-size: 14px;
 }
+.form-column input:focus {
+    /*border-color: #98a8ff;*/
+    border: 1px solid #2a4aff;
+    box-shadow: 2px 2px 1px 1px #98a8ff;
+    /*border-color: #2a4aff;*/
+    /*background: blue;*/
+}
+input:invalid {
+    border: 1px solid #fdd;
+    border-color: #900;
+    background-color: #fdd;
+  }
+
